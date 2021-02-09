@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mahira Modi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#self">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="intro">
+            <p>Hi There!</p>
+            <p>I am <span class="typed"></span></p>
+            <!-- Button trigger modal -->
+            <button type="button" data-toggle="modal" data-target="#exampleModal">
+    Contact Me
+  </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Contact Form</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="mailto:email.com?subject=email&message=comment" method="post" enctype="text/plain">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Textarea1">Message</label>
+                                    <textarea class="form-control" id="Textarea1" rows="3" cols="3" name="comment"></textarea>
+                                    <small id="Help" class="form-text "></small>
+
+                                </div>
+
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" id="formbtn" onclick="sendMail()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="self">
+        <div data-aos="fade-down">
+            <h2 class="heading">ABOUT ME</h2>
+            <p>I am a full-stack Web Developer who designs and develops experiences that make people's life simple and better,currenty I am pursuing computer engineering.Also I am a state-level Tchokball player. Other than developing my favorite pass time
+                are painting, playing guitar, and spending time with my family.To see some of my work scroll down below.</p>
+        </div>
+    </section>
+
+    <div id="about" data-aos="fade-down">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col col2 col-md-6 col-12 ">
+                    <h2 class="heading">EDUCATION</h2>
+                    <div class="wrapper">
+                        <div class="center-line"></div>
+                        <div class="row row1" data-aos="fade-down">
+                            <section>
+                                <div class="details">
+                                    <i class="fas fa-book"></i>
+                                    <p class="title">Primary</p>
+                                </div>
+                                <p>Om Prakash Bansal Modern School</p>
+                                <p>Fategarh Sahib, Punjab</p>
+
+                            </section>
+                        </div>
+                        <div class="row row2" data-aos="fade-down">
+                            <section>
+                                <div class="details">
+                                    <i class="fas fa-school"></i>
+                                    <p class="title">Secondary</p>
+                                </div>
+                                <p>Dyal Singh Public School</p>
+                                <p>panipat, Haryana</p>
+
+                            </section>
+                        </div>
+                        <div class="row row1" data-aos="fade-down">
+                            <section>
+                                <div class="details">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <p class="title">B.Tech</p>
+                                </div>
+                                <p>Thapar University</p>
+                                <p>Patiala, Punjab</p>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col col1 col-md-6 col-12" data-aos="fade-left">
+                    <h2 class="heading">SKILLS</h2>
+                    <div class="skills">
+                        <div id="pro1" class="pro">
+                            <p>HTML (80%)</p>
+                            <div id="progress"></div>
+                        </div>
+
+                        <div id="pro2" class="pro">
+                            <p>CSS (75%)</p>
+                            <div id="progress"></div>
+                        </div>
+                        <div id="pro3" class="pro">
+                            <p>javascript (65%)</p>
+                            <div id="progress"></div>
+                        </div>
+                        <div id="pro4" class="pro">
+                            <p>MongoDB (60%)</p>
+                            <div id="progress"></div>
+                        </div>
+                        <div id="pro5" class="pro">
+                            <p>NodeJs (62%)</p>
+                            <div id="progress"></div>
+                        </div>
+                        <div id="pro6" class="pro">
+                            <p>Express (65%)</p>
+                            <div id="progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="work" data-aos="fade-down">
+        <h2 class="heading">WORK</h2>
+        <div class="container">
+            <div class="row row-md-12" data-aos="fade-left">
+
+                <div class="col-sm">
+                    <div class="img-container">
+                        <div class="img">
+                            <figure>
+                                <img src="images/musicplay.png" alt="" class="front">
+                            </figure>
+                            <figure class="back">
+                                <p>Music Player</p>
+                                <a href="https://github.com/Mahiramodi/MusicPlayer.github.io"><i class="fab fa-github"></i></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="img-container">
+                        <div class="img">
+                            <figure>
+                                <img src="images/logo.jpeg" alt="" class="front">
+                            </figure>
+                            <figure class="back">
+                                <p>Zeneri</p>
+                                <a href="https://github.com/Mahiramodi/Zeneri"><i class="fab fa-github"></i></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="img-container">
+                        <div class="img">
+                            <figure>
+                                <img src="images/weather.png" alt="" class="front">
+                            </figure>
+                            <figure class="back">
+                                <p>Weather App</p>
+                                <a href="https://github.com/Mahiramodi/Weather"><i class="fab fa-github"></i></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-md-12" data-aos="fade-right">
+
+                <div class="col-sm ">
+                    <div class="img-container">
+                        <div class="img">
+                            <figure>
+                                <img src="images/mahiarch.png" alt="" class="front">
+                            </figure>
+                            <figure class="back">
+                                <p>MahiArch</p>
+                                <a href="https://github.com/Mahiramodi/Architecture-Website"><i class="fab fa-github"></i></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="img-container">
+                        <div class="img">
+                            <figure>
+                                <img src="images/coffeeshop.png" alt="" class="front">
+                            </figure>
+                            <figure class="back">
+                                <p>Coffee Shop</p>
+                                <a href="https://github.com/Mahiramodi/Coffee-Shop"><i class="fab fa-github"></i></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="img-container">
+                        <div class="img">
+                            <figure>
+                                <img src="images/raise.png" alt="" class="front">
+                            </figure>
+                            <figure class="back">
+                                <p>Raise</p>
+                                <a href="https://github.com/Mahiramodi/hack_for_she"><i class="fab fa-github"></i></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class=" col col-4 ">
+                    <p id="p1">Connect with me:</p>
+                    <p id="icons"><a href="https://www.instagram.com/mahira.modi5/"><i class="fab fa-instagram"></i></a><a href="https://github.com/Mahiramodi"><i class="fab fa-github"></i></a><a href="https://m.facebook.com/mahira.modi"><i class="fab fa-facebook-messenger"></i></a>
+                        <a href="https://www.linkedin.com/in/mahira-modi-1789251ba/"><i class="fab fa-linkedin"></i></a>
+                    </p>
+                </div>
+                <div class="fot col col-8">
+                    <p>Made with <i class="fas fa-heart "></i> by Mahira Modi</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="javascript/index.js"></script>
+    <script src="javascript/typed.js "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        var typed = new Typed('.typed', {
+            strings: [
+                "Mahira Modi. ",
+                "a Designer. ",
+                "a Developer. ",
+
+
+            ],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+        });
+        AOS.init({
+            offset: 320,
+            duration: 1000,
+            delay: 500,
+        });
+
+        (function() {
+            emailjs.init("user_hZTwRvGLYJjdntLn6HaWP");
+        })();
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+</body>
+
+</html>
