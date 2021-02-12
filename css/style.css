@@ -61,6 +61,9 @@ header {
     background-position: center;
     background-attachment: fixed;
     overflow-x: hidden;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 header #intro {
@@ -147,6 +150,9 @@ header #intro .typed {
     align-items: center;
     background-attachment: fixed;
     font-size: 2.2rem;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 #self p {
@@ -190,6 +196,9 @@ header #intro .typed {
     background-attachment: fixed;
     padding-bottom: 3%;
     color: #292b2c;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 
