@@ -10,7 +10,7 @@ comment.style.fontSize = "2rem";
 function sendMail() {
     if (comment.value != "" && email.value != "" && email.value.includes("@")) {
         alert("Successfull");
-        window.location.href = "https://mail.google.com/mail/u/0/#inbox?compose=new";
+        window.location.href = "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkkNFzgPKrKBrBvQmpsnsSXpClFtmPTfGrSMFtSrmcSJwsjxBRDdPJTXcGjGLkLnZBLvSD";
 
     } else {
 
