@@ -12,6 +12,7 @@ function sendMail() {
         alert("Successfull");
         window.location.href = "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkkNFzgPKrKBrBvQmpsnsSXpClFtmPTfGrSMFtSrmcSJwsjxBRDdPJTXcGjGLkLnZBLvSD";
 
+
     } else {
 
         alert("UnSuccessfull");
