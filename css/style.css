@@ -11,11 +11,12 @@ html {
 
 body {
     overflow-x: hidden;
+    /* font-family: "Roboto Slab", serif; */
 }
 
 nav {
     font-size: 2.5rem;
-    background-image: linear-gradient(80deg, rgba(54, 38, 38, 0.39) 0%, rgba(73, 63, 63, 0.377) 100%), url("https://i.pinimg.com/originals/f1/a1/7d/f1a17d847a4863de9f574a2fb3ec107d.gif");
+    background-image: linear-gradient( 80deg, rgba(54, 38, 38, 0.39) 0%, rgba(73, 63, 63, 0.377) 100%), url("https://i.pinimg.com/originals/f1/a1/7d/f1a17d847a4863de9f574a2fb3ec107d.gif");
 }
 
 .navbar-brand {
@@ -24,7 +25,7 @@ nav {
     font-weight: 500;
     color: #83c5be !important;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", "cursive";
 }
 
 nav ul li {
@@ -35,6 +36,7 @@ nav ul li a {
     color: #ffddd2 !important;
     text-decoration: none;
     position: relative;
+    font-family: "Lora", serif;
 }
 
 nav ul li a::after {
@@ -56,10 +58,10 @@ nav ul li a:hover:after {
 header {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(80deg, rgba(54, 38, 38, 0.39) 0%, rgba(73, 63, 63, 0.377) 100%), url("https://i.pinimg.com/originals/f1/a1/7d/f1a17d847a4863de9f574a2fb3ec107d.gif");
+    background-image: linear-gradient( 80deg, rgba(54, 38, 38, 0.39) 0%, rgba(73, 63, 63, 0.377) 100%), url("https://i.pinimg.com/originals/f1/a1/7d/f1a17d847a4863de9f574a2fb3ec107d.gif");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     overflow-x: hidden;
     -o-background-size: cover;
     -moz-background-size: cover;
@@ -85,7 +87,7 @@ header #intro .typed {
 #intro h3 {
     font-size: 2.5rem;
     font-weight: 600;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
 }
 
 #intro button {
@@ -99,12 +101,10 @@ header #intro .typed {
 }
 
 #intro button:hover {
-    background-color: #83c5be;
+    background-color: #93cfcaec;
     cursor: pointer;
     color: #edf6f9;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0px 20px 6px -6px #777;
+    border: 1.7px solid rgb(157, 204, 198);
 }
 
 #intro .modal .close {
@@ -139,7 +139,8 @@ header #intro .typed {
     font-size: 2rem;
 }
 
-#self {
+
+/* #self {
     display: flex;
     width: 100%;
     height: 90vh;
@@ -153,12 +154,41 @@ header #intro .typed {
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
+} */
+
+#particles-js {
+    height: 100vh;
+    background-color: #edf6f9;
 }
 
-#self p {
-    text-align: center;
-    padding: 2rem;
+#self {
+    position: absolute;
+    width: 100%;
+    display: flex;
+}
+
+#self #self_icon {
+    display: grid;
+    place-items: center;
+}
+
+#self #self_icon img {
+    /* background-image: url("https://image.freepik.com/free-psd/3d-female-character-working-laptop-while-sitting-chair_23-2148938889.jpg"); */
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#self #self_p {
+    display: grid;
+    place-items: center;
+    margin-top: 4%;
+    padding-bottom: 3%;
     font-size: 2.5rem;
+    font-family: "Lora", serif;
+    height: 100%;
+    width: 100%;
 }
 
 #self h2::before {
@@ -178,27 +208,20 @@ header #intro .typed {
     font-size: 5.5rem;
 }
 
-#self div {
-    width: 40%;
-    height: 70%;
-    background-color: #edf6f9;
-    text-align: center;
-    padding: 2%;
-}
-
 #about .col1 {
-    background-image: linear-gradient(80deg, rgba(93 58 58 / 47%) 0%, rgba(59, 47, 47, 0.651) 100%), url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80");
+    background-image: linear-gradient( 80deg, rgba(93 58 58 / 47%) 0%, rgba(59, 47, 47, 0.651) 100%), url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80");
     height: 90vh;
     width: 100%;
     background-position: left;
     background-size: cover;
     font-size: 2rem;
     background-attachment: fixed;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
     color: #292b2c;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
+    font-family: "Lora", serif;
 }
 
 
@@ -214,66 +237,48 @@ header #intro .typed {
 /* } */
 
 .heading {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     text-align: center;
     font-size: 5rem;
 }
 
-.pro {
-    margin: 3%;
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.skills div {
+    padding: 3%;
 }
 
 .skills p {
     color: #edf6f9;
     text-transform: capitalize;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 0 !important;
 }
 
-#progress {
-    background: rgba(59, 57, 57, 0.877);
-    border-radius: 13px;
-    height: 2rem;
-    width: 80%;
-    padding: 0.3rem;
+.skills i {
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+    background-color: rgba(255, 245, 238, 0.801);
+    color: rgb(88 79 93);
+    display: grid;
+    place-items: center;
+    font-size: 4.3rem;
 }
 
-.pro #progress:after {
-    content: '';
-    display: block;
-    /* background: #83c5be; */
-    width: 50%;
-    height: 100%;
-    border-radius: 0.9rem;
+.skills #express {
+    font-size: 1.2rem;
 }
 
-#pro1 #progress:after {
-    background: #63b890;
-    width: 80%;
-}
-
-#pro2 #progress:after {
-    background: #e29578;
-    width: 75%;
-}
-
-#pro3 #progress:after {
-    background-color: #ffddd2;
-    width: 65%;
-}
-
-#pro4 #progress:after {
-    background: #be8580;
-    width: 60%;
-}
-
-#pro5 #progress:after {
-    background: #F07167;
-    width: 62%;
-}
-
-#pro6 #progress:after {
-    background: #0081A7;
-    width: 65%;
+.skills i img {
+    width: 40px;
+    height: 40px;
 }
 
 #about .col2 h2::before {
@@ -302,7 +307,7 @@ header #intro .typed {
     position: relative;
     display: flex;
     justify-content: center;
-    font-size: 4.5rem;
+    font-size: 4.3rem;
     font-weight: 500;
     margin-top: 3%;
     z-index: 1;
@@ -314,6 +319,7 @@ header #intro .typed {
     font-size: 2rem;
     height: 90vh;
     width: 100%;
+    font-family: "Lora", serif;
 }
 
 #about .col2 .title {
@@ -402,6 +408,7 @@ header #intro .typed {
 #work {
     background-color: #edf6f9;
     margin: 0%;
+    padding: 2%;
 }
 
 #work h2::before {
@@ -423,11 +430,16 @@ header #intro .typed {
     z-index: 1;
 }
 
+#work .row {
+    margin-bottom: 2%;
+}
+
 #work .img-container {
-    width: 30rem;
-    height: 27rem;
+    width: 23rem;
+    height: 23rem;
     margin-top: 4.5%;
-    padding-bottom: 13%;
+    border-radius: 3%;
+    overflow: hidden;
 }
 
 .img {
@@ -474,7 +486,7 @@ footer {
     background-color: #83c5be;
     padding: 3% 0%;
     font-size: 3.2rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-weight: 600;
     color: aliceblue;
 }
@@ -501,13 +513,13 @@ footer .fot i {
     padding: 0%;
 }
 
-@media (max-width:330px) {
+@media (max-width: 330px) {
     .wrapper .row1 i {
         right: -29%;
     }
 }
 
-@media(max-width:1030px) {
+@media (max-width: 1030px) {
     .wrapper .row1 i {
         right: -22%;
     }
@@ -516,29 +528,23 @@ footer .fot i {
     }
 }
 
-@media(max-width:1450px),
-(max-height:616px) {
+@media (max-width: 1450px),
+(max-height: 616px) {
     #self p {
         text-align: center;
-        padding: 2rem 5rem;
-        font-size: 2rem;
+        padding: 2rem 2rem;
+        font-size: 1.7rem;
     }
     .wrapper p {
         margin-top: 0;
         margin-bottom: 0rem;
-    }
-    #self div {
-        height: 90%;
-    }
-    .pro {
-        margin: 2%;
     }
     header #intro {
         font-size: 4.5rem;
     }
 }
 
-@media(max-width:770px) {
+@media (max-width: 770px) {
     .wrapper .row i {
         width: 3rem;
         height: 3rem;
@@ -559,14 +565,9 @@ footer .fot i {
         left: -0.4rem;
         top: 1rem;
     }
-    #self p {
-        padding-top: 1rem;
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
-    }
     #self h2::before {
         height: 2.5rem;
-        width: 52%;
+        width: 35%;
         top: 38%;
         left: 36%;
     }
@@ -579,9 +580,6 @@ footer .fot i {
     .skills p {
         font-size: 2rem;
     }
-    .pro {
-        margin-top: 10%;
-    }
     #about .col2 .title {
         font-size: 2.5rem;
         padding-left: 1rem;
@@ -592,10 +590,6 @@ footer .fot i {
     #about .col2 p {
         font-size: 2rem;
         margin-bottom: 0rem;
-    }
-    #self div {
-        width: 61%;
-        height: 60%;
     }
     #work .row-sm {
         margin-left: 25%;
@@ -620,7 +614,7 @@ footer .fot i {
     }
 }
 
-@media(max-width:430px) {
+@media (max-width: 430px) {
     header #intro {
         font-size: 3.5rem;
     }
@@ -631,20 +625,15 @@ footer .fot i {
     #about .col2 {
         font-size: 1.5rem;
     }
-    #self {
+    #self p {
         font-size: 1.5rem;
     }
     #self h2 {
         font-size: 3.5rem;
     }
-    #self div {
-        width: 73%;
-        height: 70%;
-        padding: 9% 3%;
-    }
     #self h2::before {
         height: 2.2rem;
-        width: 55%;
+        width: 41%;
         top: 38%;
         left: 36%;
     }
@@ -670,9 +659,6 @@ footer .fot i {
     #about .col2 .title {
         font-size: 2rem;
         font-weight: 600;
-    }
-    .pro {
-        margin-top: 0%;
     }
     #work .row {
         padding: 6%;
@@ -700,7 +686,7 @@ footer .fot i {
     }
 }
 
-@media (max-width:430px) {
+@media (max-width: 430px) {
     .wrapper .row1 i {
         right: -24%;
     }
@@ -730,7 +716,7 @@ footer .fot i {
     }
 }
 
-@media(max-width:380px) {
+@media (max-width: 380px) {
     nav li a {
         font-size: 2rem;
     }

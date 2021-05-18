@@ -13,6 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
     <title>Portfolio</title>
 </head>
@@ -22,8 +26,8 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Mahira Modi</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -50,8 +54,8 @@
             <p>I am <span class="typed"></span></p>
             <!-- Button trigger modal -->
             <button type="button" data-toggle="modal" data-target="#exampleModal">
-    Contact Me
-  </button>
+                Contact Me
+            </button>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -60,15 +64,16 @@
                         <div class="modal-header">
                             <h3 class="modal-title" id="exampleModalLabel">Contact Form</h3>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
                         <div class="modal-body">
                             <form action="mailto:email.com?subject=email&message=comment" method="post" enctype="text/plain">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email address</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone else.</small>
                                 </div>
                                 <div class="form-group">
                                     <label for="Textarea1">Message</label>
@@ -89,15 +94,33 @@
             </div>
         </div>
     </header>
-    <section id="self">
-        <div data-aos="fade-down">
-            <h2 class="heading">ABOUT ME</h2>
-            <p>I am a full-stack Web Developer who designs and develops experiences that make people's life simple and better,currenty I am pursuing computer engineering.Also I am a state-level Tchokball player. Other than developing my favorite pass time
-                are painting, playing guitar, and spending time with my family.To see some of my work scroll down below.</p>
+
+
+    <section>
+        <div id="particles-js">
+            <div id="self">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col2 col-md-6 col-12 " id="self_icon" data-aos="fade-right">
+                            <img src="images/3d.png" alt="">
+                        </div>
+                        <div class=" col col1 col-md-6 col-12" id="self_p">
+                            <div data-aos="fade-down">
+                                <h2 class="heading">ABOUT ME</h2>
+                                <p>I am a full-stack Web Developer who designs and develops experiences that make people's life simple and better,currenty I am pursuing computer engineering.Also I am a state-level Tchokball player. Other than developing
+                                    my favorite pass time are painting, playing guitar, and spending time with my family.To see some of my work scroll down below.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <div id="about" data-aos="fade-down">
+    <div id="about">
         <div class="container-fluid">
             <div class="row">
 
@@ -141,33 +164,32 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col col1 col-md-6 col-12" data-aos="fade-left">
+                <div class=" col col1 col-md-6 col-12">
                     <h2 class="heading">SKILLS</h2>
                     <div class="skills">
-                        <div id="pro1" class="pro">
-                            <p>HTML (80%)</p>
-                            <div id="progress"></div>
+                        <div><i class="fab fa-html5"></i>
+                            <p>HTML</p>
                         </div>
-
-                        <div id="pro2" class="pro">
-                            <p>CSS (75%)</p>
-                            <div id="progress"></div>
+                        <div><i class="fab fa-css3-alt"></i>
+                            <p>CSS</p>
                         </div>
-                        <div id="pro3" class="pro">
-                            <p>javascript (65%)</p>
-                            <div id="progress"></div>
+                        <div><i class="fab fa-js-square"></i>
+                            <p>JavaScript</p>
                         </div>
-                        <div id="pro4" class="pro">
-                            <p>MongoDB (60%)</p>
-                            <div id="progress"></div>
+                        <div><i class="fab fa-node-js"></i>
+                            <p>Node-js</p>
                         </div>
-                        <div id="pro5" class="pro">
-                            <p>NodeJs (62%)</p>
-                            <div id="progress"></div>
+                        <div><i class="fas fa-database"></i>
+                            <p>MongoDB</p>
                         </div>
-                        <div id="pro6" class="pro">
-                            <p>Express (65%)</p>
-                            <div id="progress"></div>
+                        <div><i id="express">Express.js</i>
+                            <p>ExpressJS</p>
+                        </div>
+                        <div><i class="fab fa-react"></i>
+                            <p>Reactjs</p>
+                        </div>
+                        <div><i> <img src="images/graphql.png" alt=""></i>
+                            <p>GraphQl</p>
                         </div>
                     </div>
                 </div>
@@ -176,9 +198,9 @@
         </div>
     </div>
 
-    <section id="work" data-aos="fade-down">
+    <section id="work">
         <h2 class="heading">WORK</h2>
-        <div class="container">
+        <div class="container-fluid" data-aos="fade-down">
             <div class="row row-md-12" data-aos="fade-left">
 
                 <div class="col-sm">
@@ -189,7 +211,8 @@
                             </figure>
                             <figure class="back">
                                 <p>Music Player</p>
-                                <a href="https://github.com/Mahiramodi/MusicPlayer.github.io"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Mahiramodi/MusicPlayer.github.io"><i
+                                        class="fab fa-github"></i></a>
                             </figure>
                         </div>
                     </div>
@@ -220,6 +243,20 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm">
+                    <div class="img-container">
+                        <div class="img">
+                            <figure>
+                                <img src="images/funlearn.png" alt="" class="front">
+                            </figure>
+                            <figure class="back">
+                                <p>FunLearn</p>
+                                <a href="https://github.com/gurleen-kaur1313/FunLearn"><i class="fab fa-github"></i></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="row row-md-12" data-aos="fade-right">
 
@@ -231,7 +268,8 @@
                             </figure>
                             <figure class="back">
                                 <p>MahiArch</p>
-                                <a href="https://github.com/Mahiramodi/Architecture-Website"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Mahiramodi/Architecture-Website"><i
+                                        class="fab fa-github"></i></a>
                             </figure>
                         </div>
                     </div>
@@ -262,6 +300,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-sm">
+                    <div class="img-container">
+                        <div class="img">
+                            <figure>
+                                <img src="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png?v=26" alt="" class="front">
+                            </figure>
+                            <figure class="back">
+                                <p>Netflix_Clone</p>
+                                <a href="https://github.com/Mahiramodi/Netflix_Clone/"><i class="fab fa-github"></i></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -270,7 +321,10 @@
             <div class="row">
                 <div class=" col col-4 ">
                     <p id="p1">Connect with me:</p>
-                    <p id="icons"><a href="https://www.instagram.com/mahira.modi5/"><i class="fab fa-instagram"></i></a><a href="https://github.com/Mahiramodi"><i class="fab fa-github"></i></a><a href="https://m.facebook.com/mahira.modi"><i class="fab fa-facebook-messenger"></i></a>
+                    <p id="icons"><a href="https://www.instagram.com/mahira.modi5/"><i
+                                class="fab fa-instagram"></i></a><a href="https://github.com/Mahiramodi"><i
+                                class="fab fa-github"></i></a><a href="https://m.facebook.com/mahira.modi"><i
+                                class="fab fa-facebook-messenger"></i></a>
                         <a href="https://www.linkedin.com/in/mahira-modi-1789251ba/"><i class="fab fa-linkedin"></i></a>
                     </p>
                 </div>
@@ -284,6 +338,8 @@
 
 
 
+    <script src="javascript/particles.js"></script>
+    <script src="javascript/app.js"></script>
     <script src="javascript/index.js"></script>
     <script src="javascript/typed.js "></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -302,9 +358,9 @@
             loop: true,
         });
         AOS.init({
-            offset: 320,
+            offset: 200,
             duration: 1000,
-            delay: 500,
+            delay: 400,
         });
 
         (function() {
