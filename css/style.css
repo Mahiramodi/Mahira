@@ -177,7 +177,7 @@ header #intro .typed {
 #self #self_icon img {
     /* background-image: url("https://image.freepik.com/free-psd/3d-female-character-working-laptop-while-sitting-chair_23-2148938889.jpg"); */
     width: 90%;
-    height: 100%;
+    height: fit-content;
     margin: 0;
     padding: 0;
 }
